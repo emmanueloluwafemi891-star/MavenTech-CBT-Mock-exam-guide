@@ -2,7 +2,7 @@
 let selectedCourse = [];
 let currentQuestion = 0;
 let userAnswers = [];
-let timeLeft = 600;
+let timeLeft = 1800;
 let timer;
 
 // ===== START QUIZ =====
@@ -27,7 +27,7 @@ function startQuiz() {
 
   currentQuestion = 0;
   userAnswers = new Array(selectedCourse.length).fill(null);
-  timeLeft = 600;
+  timeLeft = 1800;
 
   document.getElementById("start-screen").classList.add("hidden");
   document.getElementById("quiz-screen").classList.remove("hidden");
@@ -222,7 +222,7 @@ window.onload = function () {
       <h3>Previous Result</h3>
       <p>Name: ${result.name}</p>
       <p>Course: ${result.course}</p>
-      <p>Score: ${result.score}/20</p>
+      <p>Score: ${result.score}/50</p>
       <p>Percentage: ${result.percentage}%</p>
     `;
   }
@@ -407,7 +407,157 @@ const GST112 = [
       "Political rights are restricted"
     ],
     answer: 2
-  }
+  },
+{
+  question: "Nigeria gained independence in:",
+  options: ["1957", "1960", "1963", "1979"],
+  answer: 1
+  },
+{
+  question: "The capital city of Nigeria is:",
+  options: ["Lagos", "Abuja", "Kaduna", "Ibadan"],
+  answer: 1
+  },
+{
+  question: "Nigeria operates a ______ system of government.",
+  options: ["Unitary", "Confederal", "Federal", "Monarchical"],
+  answer: 2
+},
+{
+  question: "The highest law in Nigeria is the:",
+  options: ["National Anthem", "Constitution", "Electoral Act", "Penal Code"],
+  answer: 1
+},
+{
+  question: "Citizenship by birth is acquired through:",
+  options: ["Marriage", "Naturalization", "Being born to Nigerian parents", "Registration"],
+  answer: 2
+},
+{
+  question: "Democracy simply means:",
+  options: ["Rule by soldiers", "Rule by the people", "Rule by kings", "Rule by judges"],
+  answer: 1
+},
+{
+  question: "The green colour in the Nigerian flag represents:",
+  options: ["Peace", "Agriculture", "Unity", "Religion"],
+  answer: 1
+},
+{
+  question: "The white colour in the Nigerian flag symbolizes:",
+  options: ["Peace", "Strength", "Justice", "Unity"],
+  answer: 0
+},
+{
+  question: "The legislative arm of government is responsible for:",
+  options: ["Making laws", "Executing laws", "Interpreting laws", "Conducting elections"],
+  answer: 0
+},
+{
+  question: "The executive arm of government is headed by the:",
+  options: ["Chief Justice", "President", "Speaker", "Senate President"],
+  answer: 1
+},
+{
+  question: "The judiciary is responsible for:",
+  options: ["Making laws", "Executing laws", "Interpreting laws", "Collecting taxes"],
+  answer: 2
+},
+{
+  question: "The Nigerian National Anthem encourages citizens to:",
+  options: ["Promote violence", "Serve the nation", "Travel abroad", "Ignore authority"],
+  answer: 1
+},
+{
+  question: "One duty of every Nigerian citizen is to:",
+  options: ["Evade taxes", "Obey the law", "Destroy public property", "Promote corruption"],
+  answer: 1
+},
+{
+  question: "The Independent National Electoral Commission (INEC) is responsible for:",
+  options: ["Printing money", "Conducting elections", "Making laws", "Collecting taxes"],
+  answer: 1
+},
+{
+  question: "The first military coup in Nigeria took place in:",
+  options: ["1960", "1963", "1966", "1975"],
+  answer: 2
+},
+{
+  question: "Which of these is a fundamental human right?",
+  options: ["Right to life", "Right to steal", "Right to corruption", "Right to discrimination"],
+  answer: 0
+},
+{
+  question: "One objective of national integration is to:",
+  options: ["Promote tribalism", "Promote national unity", "Encourage discrimination", "Create conflicts"],
+  answer: 1
+},
+{
+  question: "The Nigerian Coat of Arms contains:",
+  options: ["One horse", "Two horses", "Three lions", "Four stars"],
+  answer: 1
+},
+{
+  question: "The black shield on the Nigerian Coat of Arms represents:",
+  options: ["Strength", "Fertile soil", "Peace", "Justice"],
+  answer: 1
+},
+{
+  question: "One major factor that promotes national development is:",
+  options: ["Corruption", "Good leadership", "Ethnic conflict", "Religious intolerance"],
+  answer: 1
+},
+{
+  question: "The slogan 'Unity and Faith, Peace and Progress' is Nigeria's:",
+  options: ["National Anthem", "National Motto", "National Pledge", "Constitution"],
+  answer: 1
+},
+{
+  question: "Which of the following promotes peaceful coexistence?",
+  options: ["Religious intolerance", "Respect for diversity", "Ethnic rivalry", "Violence"],
+  answer: 1
+},
+{
+  question: "The Nigerian Constitution guarantees freedom of:",
+  options: ["Oppression", "Expression", "Corruption", "Violence"],
+  answer: 1
+},
+{
+  question: "The voting age in Nigeria is:",
+  options: ["16 years", "18 years", "20 years", "21 years"],
+  answer: 1
+},
+{
+  question: "National values include:",
+  options: ["Dishonesty", "Patriotism", "Tribalism", "Corruption"],
+  answer: 1
+},
+{
+  question: "One importance of civic education is to:",
+  options: ["Encourage lawlessness", "Develop responsible citizens", "Promote corruption", "Discourage education"],
+  answer: 1
+},
+{
+  question: "A responsible citizen should protect:",
+  options: ["Public property", "Only personal property", "Foreign property", "No property"],
+  answer: 0
+},
+{
+  question: "One consequence of corruption is:",
+  options: ["National development", "Economic decline", "Political stability", "Increased productivity"],
+  answer: 1
+},
+{
+  question: "The primary aim of government is to:",
+  options: ["Oppress citizens", "Provide security and welfare", "Promote tribalism", "Encourage injustice"],
+  answer: 1
+},
+{
+  question: "Respect for the rule of law means:",
+  options: ["Everyone is above the law", "Everyone is equal before the law", "Only leaders obey the law", "Only judges obey the law"],
+  answer: 1
+},
 ];
 const MTH132 = [
   {
@@ -579,813 +729,87 @@ const MTH132 = [
       "8"
     ],
     answer: 1
-  }
-];
-const PHY102 = [
-  {
-    question: "Electrostatics is the study of:",
-    options: [
-      "Moving charges",
-      "Stationary electric charges",
-      "Magnetic fields only",
-      "Electric circuits only"
-    ],
-    answer: 1
   },
-  {
-    question: "The SI unit of electric charge is:",
-    options: [
-      "Volt (V)",
-      "Ampere (A)",
-      "Coulomb (C)",
-      "Ohm (Ω)"
-    ],
-    answer: 2
-  },
-  {
-    question: "According to Coulomb's law, like charges:",
-    options: [
-      "Attract each other",
-      "Repel each other",
-      "Neutralize each other",
-      "Produce current"
-    ],
-    answer: 1
-  },
-  {
-    question: "The SI unit of potential difference is:",
-    options: [
-      "Joule",
-      "Coulomb",
-      "Watt",
-      "Volt"
-    ],
-    answer: 3
-  },
-  {
-    question: "The direction of conventional electric current is:",
-    options: [
-      "From negative to positive terminal",
-      "From positive to negative terminal",
-      "Random",
-      "Circular only"
-    ],
-    answer: 1
-  },
-  {
-    question: "The electric force between two charges is directly proportional to:",
-    options: [
-      "The square of the distance between them",
-      "The product of the charges",
-      "The sum of the charges",
-      "Their masses"
-    ],
-    answer: 1
-  },
-  {
-    question: "Electric potential at a point is defined as:",
-    options: [
-      "Force per unit charge",
-      "Energy per unit charge",
-      "Charge per unit force",
-      "Current per unit charge"
-    ],
-    answer: 1
-  },
-  {
-    question: "Gauss's law relates electric flux through a closed surface to:",
-    options: [
-      "The resistance enclosed",
-      "The current enclosed",
-      "The total charge enclosed",
-      "The magnetic field enclosed"
-    ],
-    answer: 2
-  },
-  {
-    question: "The capacitance of a capacitor is measured in:",
-    options: [
-      "Coulomb",
-      "Farad",
-      "Volt",
-      "Henry"
-    ],
-    answer: 1
-  },
-  {
-    question: "A dielectric material placed between capacitor plates generally:",
-    options: [
-      "Decreases capacitance",
-      "Increases capacitance",
-      "Produces electric current",
-      "Has no effect"
-    ],
-    answer: 1
-  },
-  {
-    question: "Ohm's law is expressed as:",
-    options: [
-      "V = IR",
-      "P = IV",
-      "Q = CV",
-      "F = ma"
-    ],
-    answer: 0
-  },
-  {
-    question: "The magnetic field around a straight current-carrying conductor consists of:",
-    options: [
-      "Straight lines",
-      "Elliptical lines",
-      "Circular field lines",
-      "Parabolic lines"
-    ],
-    answer: 2
-  },
-  {
-    question: "Two charges are separated by a distance. Electrostatic force depends on:",
-    options: [
-      "Mass only",
-      "Charge and distance",
-      "Temperature only",
-      "Colour of conductor"
-    ],
-    answer: 1
-  },
-  {
-    question: "A charge moving through a potential difference performs:",
-    options: [
-      "Work",
-      "Magnetism only",
-      "Friction only",
-      "Reflection"
-    ],
-    answer: 0
-  },
-  {
-    question: "The charge stored in a capacitor is given by:",
-    options: [
-      "Q = CV",
-      "V = IR",
-      "P = IV",
-      "F = qE"
-    ],
-    answer: 0
-  },
-  {
-    question: "An electric current of 2A flows through a resistor of 5Ω. The voltage is:",
-    options: [
-      "2V",
-      "5V",
-      "7V",
-      "10V"
-    ],
-    answer: 3
-  },
-  {
-    question: "Electromagnetic induction occurs when there is:",
-    options: [
-      "Constant magnetic flux",
-      "Change in magnetic flux",
-      "Constant current only",
-      "Zero magnetic field"
-    ],
-    answer: 1
-  },
-  {
-    question: "According to Lenz's law, the induced current:",
-    options: [
-      "Enhances the change causing it",
-      "Opposes the change causing it",
-      "Has no direction",
-      "Stops immediately"
-    ],
-    answer: 1
-  },
-  {
-    question: "Maxwell predicted the existence of:",
-    options: [
-      "Gravitational waves",
-      "Sound waves",
-      "Electromagnetic waves",
-      "Water waves"
-    ],
-    answer: 2
-  },
-  {
-    question: "The speed of electromagnetic waves in vacuum is approximately:",
-    options: [
-      "3 × 10⁶ m/s",
-      "3 × 10⁷ m/s",
-      "3 × 10⁸ m/s",
-      "3 × 10⁹ m/s"
-    ],
-    answer: 2
-  }
-];
-const CSC122 = [
-  {
-    question: "Data can best be defined as:",
-    options: [
-      "Processed information",
-      "Raw facts and figures",
-      "A computer program",
-      "A database file"
-    ],
-    answer: 1
-  },
-  {
-    question: "Information is:",
-    options: [
-      "Unprocessed data",
-      "A computer language",
-      "Processed data that is meaningful",
-      "A collection of files only"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following is a source of data?",
-    options: [
-      "Questionnaire",
-      "Observation",
-      "Interview",
-      "All of the above"
-    ],
-    answer: 3
-  },
-  {
-    question: "The first stage in data processing is:",
-    options: [
-      "Processing",
-      "Storage",
-      "Collection of data",
-      "Output"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following is an example of electronic data processing?",
-    options: [
-      "Using pen and paper",
-      "Using an abacus",
-      "Using a computer system",
-      "Using a typewriter"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following is NOT a property of good data?",
-    options: [
-      "Accuracy",
-      "Relevance",
-      "Timeliness",
-      "Ambiguity"
-    ],
-    answer: 3
-  },
-  {
-    question: "A method of data collection in which information is gathered by asking questions directly is called:",
-    options: [
-      "Observation",
-      "Measurement",
-      "Interview",
-      "Experiment"
-    ],
-    answer: 2
-  },
-  {
-    question: "The arrangement of data into a form suitable for processing is called:",
-    options: [
-      "Data preparation",
-      "Data distribution",
-      "Data coding",
-      "Data conversion"
-    ],
-    answer: 0
-  },
-  {
-    question: "In batch processing, transactions are:",
-    options: [
-      "Processed immediately",
-      "Processed one at a time as they occur",
-      "Collected and processed together",
-      "Sent to different computers"
-    ],
-    answer: 2
-  },
-  {
-    question: "A system in which many users share the resources of a computer simultaneously is known as:",
-    options: [
-      "Batch processing",
-      "Time-sharing processing",
-      "Real-time processing",
-      "Multiprocessing"
-    ],
-    answer: 1
-  },
-  {
-    question: "A computer file is:",
-    options: [
-      "A storage location for related data",
-      "A programming language",
-      "A type of hardware",
-      "An operating system"
-    ],
-    answer: 0
-  },
-  {
-    question: "A database is best described as:",
-    options: [
-      "A collection of unrelated files",
-      "An organized collection of related data",
-      "A programming package",
-      "A computer network"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which processing method provides immediate results after data input?",
-    options: [
-      "Batch processing",
-      "Real-time processing",
-      "Manual processing",
-      "Mechanical processing"
-    ],
-    answer: 1
-  },
-  {
-    question: "The process of arranging records on a storage medium for easy retrieval is known as:",
-    options: [
-      "File organization",
-      "File conversion",
-      "Data transmission",
-      "Data coding"
-    ],
-    answer: 0
-  },
-  {
-    question: "Which of the following is an advantage of distributed processing?",
-    options: [
-      "Dependence on a single computer",
-      "Slower processing speed",
-      "Sharing of processing tasks among several computers",
-      "Increased risk of data duplication only"
-    ],
-    answer: 2
-  },
-  {
-    question: "Multiprogramming is the technique whereby:",
-    options: [
-      "One program executes at a time",
-      "Several programs reside in memory and share CPU time",
-      "Several users share one terminal only",
-      "Computers are connected through cables"
-    ],
-    answer: 1
-  },
-  {
-    question: "The main purpose of file processing is to:",
-    options: [
-      "Destroy unwanted files",
-      "Create software applications",
-      "Store, update, retrieve and manipulate data efficiently",
-      "Connect computers to the internet"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following file organizations stores records in the order they are received?",
-    options: [
-      "Indexed file organization",
-      "Random file organization",
-      "Sequential file organization",
-      "Direct file organization"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following is an example of a transaction processing system?",
-    options: [
-      "Payroll system",
-      "Word processor",
-      "Paint program",
-      "Media player"
-    ],
-    answer: 0
-  },
-  {
-    question: "The primary goal of data processing is to:",
-    options: [
-      "Increase the size of files",
-      "Produce meaningful information for decision-making",
-      "Reduce the number of computers",
-      "Replace human beings completely"
-    ],
-    answer: 1
-  }
-];
-const CSC104 = [
-  {
-    question: "An application package is:",
-    options: [
-      "A computer hardware component",
-      "A system software that manages hardware",
-      "A software program designed to perform specific tasks",
-      "A programming language"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following is an example of an application package?",
-    options: [
-      "Operating System",
-      "Microsoft Word",
-      "Compiler",
-      "BIOS"
-    ],
-    answer: 1
-  },
-  {
-    question: "Microsoft Access is primarily used for:",
-    options: [
-      "Creating spreadsheets",
-      "Database management",
-      "Drawing graphics",
-      "Browsing the internet"
-    ],
-    answer: 1
-  },
-  {
-    question: "A collection of related data stored in an organized manner is called a:",
-    options: [
-      "Database",
-      "Folder",
-      "Worksheet",
-      "Program"
-    ],
-    answer: 0
-  },
-  {
-    question: "Microsoft PowerPoint is mainly used for:",
-    options: [
-      "Programming",
-      "Database creation",
-      "Creating presentations",
-      "Data processing"
-    ],
-    answer: 2
-  },
-  {
-    question: "DBMS stands for:",
-    options: [
-      "Data Base Management System",
-      "Digital Base Management Software",
-      "Data Backup Management System",
-      "Database Building Management Scheme"
-    ],
-    answer: 0
-  },
-  {
-    question: "In Microsoft Access, a table consists of:",
-    options: [
-      "Slides and animations",
-      "Records and fields",
-      "Rows only",
-      "Columns only"
-    ],
-    answer: 1
-  },
-  {
-    question: "The rows in an Access table are called:",
-    options: [
-      "Fields",
-      "Records",
-      "Queries",
-      "Forms"
-    ],
-    answer: 1
-  },
-  {
-    question: "A query in Microsoft Access is used to:",
-    options: [
-      "Delete the database automatically",
-      "Search and retrieve specific information from a database",
-      "Create slide transitions",
-      "Format pictures"
-    ],
-    answer: 1
-  },
-  {
-    question: "The first slide in a PowerPoint presentation is usually called the:",
-    options: [
-      "Design Slide",
-      "Title Slide",
-      "Master Slide",
-      "Animation Slide"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which feature is used to apply movement effects to objects on a slide?",
-    options: [
-      "Transition",
-      "Animation",
-      "Filter",
-      "Formatting"
-    ],
-    answer: 1
-  },
-  {
-    question: "Slide Transition in PowerPoint refers to:",
-    options: [
-      "Formatting text",
-      "Adding pictures",
-      "The visual effect that occurs when moving from one slide to another",
-      "Creating databases"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following views in Microsoft Access allows users to modify the structure of a table?",
-    options: [
-      "Datasheet View",
-      "Print Preview",
-      "Design View",
-      "Slide View"
-    ],
-    answer: 2
-  },
-  {
-    question: "A field in a database is best defined as:",
-    options: [
-      "A collection of records",
-      "A single category of information in a table",
-      "The entire database file",
-      "A slide in PowerPoint"
-    ],
-    answer: 1
-  },
-  {
-    question: "Data filtering in Microsoft Access is used to:",
-    options: [
-      "Permanently delete records",
-      "Display only records that meet specified conditions",
-      "Encrypt the database",
-      "Create relationships"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which of the following is an example of integrating Office packages?",
-    options: [
-      "Creating a folder",
-      "Copying an Access chart into a PowerPoint presentation",
-      "Deleting files",
-      "Installing Windows"
-    ],
-    answer: 1
-  },
-  {
-    question: "Graphics and multimedia involve the use of:",
-    options: [
-      "Text only",
-      "Numbers only",
-      "Images, audio, video and animations",
-      "Databases only"
-    ],
-    answer: 2
-  },
-  {
-    question: "In Microsoft Access, the primary key is used to:",
-    options: [
-      "Open the database",
-      "Identify each record uniquely",
-      "Sort records alphabetically only",
-      "Create slide transitions"
-    ],
-    answer: 1
-  },
-  {
-    question: "A presentation containing text, graphics, sound and video is called:",
-    options: [
-      "Spreadsheet",
-      "Database",
-      "Multimedia presentation",
-      "Operating system"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which of the following best describes the relationship between Microsoft Access and Microsoft PowerPoint?",
-    options: [
-      "Both are operating systems",
-      "Both are programming languages",
-      "Both are application packages designed for different purposes",
-      "Both are antivirus programs"
-    ],
-    answer: 2
-  }
-];
-const COS102 = [
-  {
-    question: "Visual Basic (VB) is primarily a:",
-    options: [
-      "Database software",
-      "Programming language",
-      "Spreadsheet package",
-      "Web browser"
-    ],
-    answer: 1
-  },
-  {
-    question: "A set of instructions written to solve a problem is called:",
-    options: [
-      "Algorithm",
-      "Compiler",
-      "Database",
-      "Flowchart only"
-    ],
-    answer: 0
-  },
-  {
-    question: "In Visual Basic, a variable is used to:",
-    options: [
-      "Store data values",
-      "Print documents",
-      "Delete files",
-      "Draw pictures only"
-    ],
-    answer: 0
-  },
-  {
-    question: "Which of the following is a valid data type in Visual Basic?",
-    options: [
-      "Integer",
-      "Printer",
-      "Folder",
-      "Browser"
-    ],
-    answer: 0
-  },
-  {
-    question: "The command used to display information in Visual Basic is:",
-    options: [
-      "Close",
-      "Exit",
-      "MsgBox",
-      "Delete"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which symbol is used for assignment in Visual Basic?",
-    options: [
-      "+",
-      "=",
-      "<",
-      ">"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which control is commonly used to receive input from a user?",
-    options: [
-      "Label",
-      "TextBox",
-      "PictureBox",
-      "Shape"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which of the following is a branching statement in Visual Basic?",
-    options: [
-      "For...Next",
-      "Do...Loop",
-      "If...Then...Else",
-      "End"
-    ],
-    answer: 2
-  },
-  {
-    question: "A loop is used to:",
-    options: [
-      "Store files permanently",
-      "Repeat a set of instructions",
-      "Create databases",
-      "Format a disk"
-    ],
-    answer: 1
-  },
-  {
-    question: "The control used to display text that users cannot edit is:",
-    options: [
-      "TextBox",
-      "Label",
-      "Button",
-      "ListBox"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which menu option is commonly used to execute a Visual Basic program?",
-    options: [
-      "Save",
-      "Edit",
-      "Run",
-      "View"
-    ],
-    answer: 2
-  },
-  {
-    question: "A syntax error occurs when:",
-    options: [
-      "The program runs slowly",
-      "The computer shuts down",
-      "The programmer violates the language rules",
-      "The program produces correct output"
-    ],
-    answer: 2
-  },
-  {
-    question: "What is the output of the following code?\n\nDim x As Integer\nx = 5\nx = x + 3\nMsgBox x",
-    options: [
-      "3",
-      "5",
-      "8",
-      "15"
-    ],
-    answer: 2
-  },
-  {
-    question: "How many times will the following loop execute?\n\nFor i = 1 To 5\nNext i",
-    options: [
-      "4 times",
-      "5 times",
-      "6 times",
-      "Infinite times"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which of the following best describes a procedure?",
-    options: [
-      "A hardware device",
-      "A reusable block of code that performs a specific task",
-      "A database table",
-      "A file extension"
-    ],
-    answer: 1
-  },
-  {
-    question: "An array is:",
-    options: [
-      "A loop statement",
-      "A collection of related data items stored under one name",
-      "A database package",
-      "A debugging tool"
-    ],
-    answer: 1
-  },
-  {
-    question: "Which declaration creates an array of ten integers?",
-    options: [
-      "Dim A As Integer",
-      "Dim A(10) As Integer",
-      "Integer A = 10",
-      "Dim Integer(10)"
-    ],
-    answer: 1
-  },
-  {
-    question: "Debugging is the process of:",
-    options: [
-      "Installing software",
-      "Writing documentation",
-      "Detecting and correcting program errors",
-      "Deleting source code"
-    ],
-    answer: 2
-  },
-  {
-    question: "Data files are mainly used to:",
-    options: [
-      "Store information permanently",
-      "Increase monitor size",
-      "Execute hardware instructions",
-      "Design graphics only"
-    ],
-    answer: 0
-  },
-  {
-    question: "Consider the following code:\n\nDim n As Integer\nn = 7\n\nIf n Mod 2 = 0 Then\nMsgBox \"Even\"\nElse\nMsgBox \"Odd\"\nEnd If\n\nThe output is:",
-    options: [
-      "Even",
-      "Odd",
-      "7",
-      "Error"
-    ],
-    answer: 1
-  }
-];
+{
+  question: "Differentiate y = x⁵.",
+  options: ["5x⁴", "4x⁵", "5x⁵", "x⁴"],
+  answer: 0
+},
+{
+  question: "Evaluate ∫6x dx.",
+  options: ["3x² + C", "6x + C", "x² + C", "12x + C"],
+  answer: 0
+},
+{
+  question: "The derivative of a constant is:",
+  options: ["0", "1", "The constant", "Undefined"],
+  answer: 0
+},
+{
+  question: "The integral of 5 is:",
+  options: ["5", "5x + C", "x + C", "25x"],
+  answer: 1
+},
+{
+  question: "Evaluate lim(x→0) x².",
+  options: ["0", "1", "2", "Undefined"],
+  answer: 0
+},
+{
+  question: "Differentiate y = 7x.",
+  options: ["1", "7", "7x", "0"],
+  answer: 1
+},
+{
+  question: "The graph of y = mx + c is a:",
+  options: ["Circle", "Straight line", "Parabola", "Ellipse"],
+  answer: 1
+},
+{
+  question: "The slope of y = 4x + 2 is:",
+  options: ["2", "4", "6", "1"],
+  answer: 1
+},
+{
+  question: "Find the derivative of sin x.",
+  options: ["cos x", "-cos x", "tan x", "-sin x"],
+  answer: 0
+},
+{
+  question: "Find the derivative of cos x.",
+  options: ["sin x", "-sin x", "cos x", "-cos x"],
+  answer: 1
+},
+{
+  question: "The derivative of eˣ is:",
+  options: ["x", "1", "eˣ", "ln x"],
+  answer: 2
+},
+{
+  question: "Evaluate ∫2 dx.",
+  options: ["2x + C", "x² + C", "2", "4x"],
+  answer: 0
+},
+{
+  question: "The gradient of a horizontal line is:",
+  options: ["0", "1", "Undefined", "-1"],
+  answer: 0
+},
+{
+  question: "The gradient of a vertical line is:",
+  options: ["0", "1", "Undefined", "-1"],
+  answer: 2
+},
+{
+  question: "Evaluate lim(x→1)(2x + 3).",
+  options: ["4", "5", "6", "3"],
+  answer: 1
+},
+{
+  question: "Differentiate y = √x.",
+  options: ["1/(2√x)", "√x", "2√x", "1/x"],
+  answer: 0
+},
+{
+  question: "The area under a curve is found using:",
+  options: ["Differentiation", "Integration", "Matr
