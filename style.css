@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f4f7fc;
+  background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
   background: #ffffff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .hidden {
@@ -29,7 +29,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #1e3a8a;
+  color: #4c1d95;
   margin-bottom: 15px;
 }
 
@@ -49,19 +49,27 @@ select {
   font-size: 16px;
 }
 
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
 button {
   padding: 12px 20px;
   border: none;
-  background: #1e3a8a;
+  background: #4c1d95;
   color: white;
   border-radius: 8px;
   cursor: pointer;
   margin: 5px;
   font-size: 16px;
+  transition: background 0.2s ease;
 }
 
 button:hover {
-  background: #2563eb;
+  background: #7c3aed;
 }
 
 .top-bar {
@@ -73,14 +81,14 @@ button:hover {
 }
 
 #timer {
-  color: red;
+  color: #f59e0b;
   font-weight: bold;
 }
 
 .progress-box {
   width: 100%;
   height: 12px;
-  background: #ddd;
+  background: #e5e7eb;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -88,14 +96,14 @@ button:hover {
 #progress-bar {
   width: 0%;
   height: 100%;
-  background: #2563eb;
+  background: linear-gradient(90deg, #7c3aed, #f59e0b);
   border-radius: 10px;
   transition: width 0.3s;
 }
 
 #question-number {
   margin-bottom: 15px;
-  color: #1e3a8a;
+  color: #4c1d95;
 }
 
 #question {
@@ -109,15 +117,17 @@ button:hover {
   margin-bottom: 10px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .option:hover {
-  background: #e9f0ff;
+  background: #f3e8ff;
+  border-color: #c4b5fd;
 }
 
 .option.selected {
-  background: #dbeafe;
-  border: 2px solid #2563eb;
+  background: #ede9fe;
+  border: 2px solid #7c3aed;
 }
 
 .buttons {
@@ -135,12 +145,12 @@ button:hover {
 }
 
 .correct {
-  color: green;
+  color: #15803d;
   font-weight: bold;
 }
 
 .wrong {
-  color: red;
+  color: #dc2626;
   font-weight: bold;
 }
 
@@ -164,3 +174,8 @@ button:hover {
     width: 100%;
   }
 }
+
+#options {
+  max-height: 350px;
+  overflow-y: auto;
+  }
