@@ -47,8 +47,8 @@ function startTimer() {
     document.getElementById("timer").textContent =
       `Time Left: ${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
 
-    if (timeLeft === 120) {
-      alert("⚠️ Hurry! Only 2 minutes remaining.");
+    if (timeLeft === 420) {
+      alert("⚠️ Hurry! Only 7 minutes remaining.");
     }
 
     timeLeft--;
